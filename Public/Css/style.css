@@ -87,10 +87,17 @@ a, span, button, p {
     padding: 1rem 0;
 }
 
-.main {
+.main-wrapper {
     width: 100%;
     display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 1300px;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -164,7 +171,7 @@ a, span, button, p {
 .lamp-section .fancy-heading::before {
     display: block;
     position: absolute;
-    width: 100%;
+    width: 1300px;
     height: 1px;
     border-bottom: 1px solid black;
     content: '';
@@ -198,6 +205,10 @@ a, span, button, p {
         display: none;
     }
 
+    .main {
+        width: 100%
+    }
+
     .carousel {
         width: 100%;
     }
@@ -209,5 +220,9 @@ a, span, button, p {
 
     .lamp-section-content img{
         margin: 1rem 0;
+    }
+
+    .lamp-section .fancy-heading::before {
+        width: 100%;
     }
 }
