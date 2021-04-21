@@ -226,3 +226,13 @@ a, span, button, p {
         width: 100%;
     }
 }
+
+@media (max-width: 1300px) {
+    .main {
+        width: 100%;
+    }
+
+    .lamp-section .fancy-heading::before {
+        width: 100%;
+    }
+}
