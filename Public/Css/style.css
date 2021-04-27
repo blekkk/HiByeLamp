@@ -37,6 +37,10 @@ a, span, button, p {
     margin: 0 1em;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .header-right {
     display: flex;
     align-items: center;
@@ -199,6 +203,12 @@ a, span, button, p {
 @media (max-width: 768px) {
     .header-right {
         display: none;
+    }
+
+    .mobile-menu {
+        display: inline-block;
+        position: absolute;
+        right: 0;
     }
 
     .header-bottom {
