@@ -198,6 +198,20 @@ a, span, button, p {
 
 .lamp-section-content img{
     width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.swiper-button-next {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2rem 1rem;
+    border-radius: 15% 15% 15% 15%;
+}
+
+.swiper-button-prev {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2rem 1rem;
+    border-radius: 15% 15% 15% 15%;
 }
 
 @media (max-width: 768px) {
@@ -234,6 +248,11 @@ a, span, button, p {
 
     .lamp-section .fancy-heading::before {
         width: 100%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
     }
 }
 
