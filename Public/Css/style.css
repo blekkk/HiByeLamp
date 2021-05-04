@@ -220,9 +220,14 @@ a, span, button, p {
 
 footer {
     display: flex;
+    flex-direction: column;
+}
+
+.footer-contents {
     background: #E7E0C8;
+    display: flex;
     justify-content: space-around;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .footer-content {
@@ -246,6 +251,18 @@ footer {
     justify-content: space-around;
     list-style: none;
     padding: 0;
+}
+
+.footer-copyright {
+    width: 100%;
+    background: #7b7664;
+
+    text-align: center;
+}
+
+.footer-copyright p {
+    margin: 0.5rem 0;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -297,6 +314,11 @@ footer {
 
     footer {
         flex-direction: column;
+    }
+
+    .footer-contents {
+        flex-direction: column;
+        padding-bottom: 1rem;
     }
 }
 
